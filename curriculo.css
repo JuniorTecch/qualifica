@@ -1,0 +1,163 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header .logo img {
+    width: 100px;
+    height: auto;
+}
+
+header h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav button {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #e0a800;
+}
+
+/* Seção principal */
+main {
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+section h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #ffc107;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Galeria de Imagens */
+.galeria-imagens {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.galeria-imagens img {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.galeria-imagens img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Lista de Vagas */
+.lista-vagas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.vaga {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.vaga h3 {
+    color: #0056b3;
+    margin-bottom: 0.5rem;
+}
+
+.vaga button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vaga button:hover {
+    background-color: #003580;
+}
+
+/* Empresas Parceiras */
+.logos-empresas {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.logos-empresas img {
+    width: 150px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.logos-empresas img:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}

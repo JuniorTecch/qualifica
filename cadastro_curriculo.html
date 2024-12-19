@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Currículo</title>
+    <link rel="stylesheet" href="cadastro_curriculo.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Cadastro de Currículo</h1>
+    </header>
+
+    <!-- Formulário Principal -->
+    <main>
+        <form id="form-cadastro">
+            <!-- Informações Pessoais -->
+            <section>
+                <h2>Informações Pessoais</h2>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </section>
+
+            <!-- Experiências -->
+            <section>
+                <h2>Experiências Profissionais</h2>
+                <div class="input-group">
+                    <label for="empresa">Local/Empresa:</label>
+                    <input type="text" id="empresa">
+
+                    <label for="funcao">Função:</label>
+                    <input type="text" id="funcao">
+
+                    <label for="tempo">Tempo:</label>
+                    <input type="text" id="tempo">
+
+                    <button type="button" id="adicionar-experiencia">Adicionar</button>
+                </div>
+                <ul id="lista-experiencias"></ul>
+            </section>
+
+            <!-- Cursos -->
+            <section>
+                <h2>Cursos</h2>
+                <div class="input-group">
+                    <label for="curso">Curso:</label>
+                    <input type="text" id="curso">
+
+                    <label for="instituicao">Instituição:</label>
+                    <input type="text" id="instituicao">
+
+                    <button type="button" id="adicionar-curso">Adicionar</button>
+                </div>
+                <ul id="lista-cursos"></ul>
+            </section>
+
+            <!-- Botão de Envio -->
+            <button type="submit" id="enviar">Enviar Currículo</button>
+        </form>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Cadastro de Currículos</p>
+    </footer>
+
+    <script src="cadastro_curriculo.js"></script>
+</body>
+</html>

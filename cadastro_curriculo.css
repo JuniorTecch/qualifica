@@ -1,0 +1,104 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8ecee; /* Fundo claro com tom de vermelho */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #c62828; /* Vermelho forte */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Formulário */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #b71c1c; /* Vermelho escuro */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.input-group input {
+    flex: 1;
+}
+
+button {
+    background-color: #d32f2f; /* Botão vermelho */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #9a0007; /* Vermelho mais escuro ao passar o mouse */
+}
+
+ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+ul li {
+    background: #fbe9e7; /* Fundo claro para itens da lista */
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #b71c1c; /* Vermelho escuro */
+    color: #fff;
+    margin-top: 2rem;
+}
